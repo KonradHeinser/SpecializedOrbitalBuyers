@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Specialized Orbital Buyers</name>
+  <author>alite</author>
+  <packageId>SpecializedOrbitals.Mod</packageId>
+  <supportedVersions>
+    <li>1.4</li>
+  </supportedVersions>
+  <description>
+Do you have an excess organ problem? Have spare armors stuck in those hard to reach places? This mod adds orbital merchants that will buy all of a certain type of item. They'll stick around for a few days to buy the things, then they'll go pawn them off to people on another rimworld. They have obscene amounts of silver, so you're free to sell everything you got. If they don't have enough silver, then you should probably think about getting on a ship.
+
+Current merchants include: Equipment buyers, Organ buyers, Art hoarders, Farming buyer, Drug buyer
+
+[url=https://github.com/KonradHeinser/modName][img]https://i.imgur.com/kTkpTOE.png[/img][/url]
+[url=https://ko-fi.com/alite56114][img]https://i.imgur.com/Utx6OIH.png[/img][/url]
+
+I made this mod because I found that there tended to be very specific types of items that I just kept stockpiling because the only people I could sell them to just didn't have enough money. If you'd like a new orbital type added, or find some place where I oopsied, please let me know.
+  </description>
+</ModMetaData>
