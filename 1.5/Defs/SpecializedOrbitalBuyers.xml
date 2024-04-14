@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <TraderKindDef>
+        <defName>Orbital_EquipmentBuyers</defName>
+        <label>equipment buyer</label>
+        <orbital>true</orbital>
+        <stockGenerators>
+
+            <!-- The silver -->
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>Silver</thingDef>
+                <countRange>99999~99999</countRange>
+            </li>
+
+            <!-- Buying -->
+
+            <li Class="StockGenerator_Category">
+                <categoryDef>Weapons</categoryDef>
+            </li>
+            <li Class="StockGenerator_Category">
+                <categoryDef>Apparel</categoryDef>
+            </li>
+        </stockGenerators>
+        <hideThingsNotWillingToTrade>True</hideThingsNotWillingToTrade>
+    </TraderKindDef>
+
+    <TraderKindDef>
+        <defName>Orbital_OrganBuyers</defName>
+        <label>organ buyer</label>
+        <orbital>true</orbital>
+        <stockGenerators>
+
+            <!-- The silver -->
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>Silver</thingDef>
+                <countRange>99999~99999</countRange>
+            </li>
+
+            <!-- Buying -->
+
+            <li Class="StockGenerator_Category">
+                <categoryDef>BodyPartsNatural</categoryDef>
+            </li>
+        </stockGenerators>
+        <hideThingsNotWillingToTrade>True</hideThingsNotWillingToTrade>
+    </TraderKindDef>
+
+    <TraderKindDef>
+        <defName>Orbital_ArtBuyers</defName>
+        <label>art hoarder</label>
+        <orbital>true</orbital>
+        <stockGenerators>
+
+            <!-- The silver -->
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>Silver</thingDef>
+                <countRange>99999~99999</countRange>
+            </li>
+
+            <!-- Buying -->
+            <li Class="StockGenerator_BuyTradeTag"><tag>Art</tag></li>
+            <li Class="StockGenerator_Category">
+                <categoryDef>BuildingsFurniture</categoryDef>
+            </li>
+        </stockGenerators>
+        <hideThingsNotWillingToTrade>True</hideThingsNotWillingToTrade>
+    </TraderKindDef>
+
+    <TraderKindDef>
+        <defName>Orbital_FarmBuyers</defName>
+        <label>farm buyer</label>
+        <orbital>true</orbital>
+        <stockGenerators>
+
+            <!-- The silver -->
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>Silver</thingDef>
+                <countRange>99999~99999</countRange>
+            </li>
+
+            <!--Add all animal types to be purchased-->
+
+            <li Class="StockGenerator_Category">
+                <categoryDef>Animals</categoryDef>
+            </li>
+
+            <!--Food and Plant items to be bought-->
+            <li Class="StockGenerator_MultiDef">
+                <thingDefs>
+                    <li>WoodLog</li>
+                    <li>MedicineHerbal</li>
+                    <li>Cloth</li>
+                    <li>Chocolate</li>
+                    <li>Dye</li>
+                    <li>Chemfuel</li>
+                </thingDefs>
+            </li>                    
+            <li Class="StockGenerator_Category">
+                <categoryDef>Textiles</categoryDef>
+            </li>
+            <li Class="StockGenerator_Category">
+                <categoryDef>FoodRaw</categoryDef>
+            </li>
+        </stockGenerators>
+        <hideThingsNotWillingToTrade>True</hideThingsNotWillingToTrade>
+    </TraderKindDef>
+
+    <TraderKindDef>
+        <defName>Orbital_DrugBuyers</defName>
+        <label>drug buyer</label>
+        <orbital>true</orbital>
+        <stockGenerators>
+
+            <!-- The silver -->
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>Silver</thingDef>
+                <countRange>99999~99999</countRange>
+            </li>
+
+            <!-- Buying -->
+            <li Class="StockGenerator_BuyTradeTag"><tag>Drugs</tag></li>
+        </stockGenerators>
+        <hideThingsNotWillingToTrade>True</hideThingsNotWillingToTrade>
+    </TraderKindDef>
+</Defs>
