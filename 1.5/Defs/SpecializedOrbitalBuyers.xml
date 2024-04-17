@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <TraderKindDef>
-        <defName>Orbital_EquipmentBuyers</defName>
-        <label>equipment buyer</label>
+    <TraderKindDef Name="SOM_SpecializedOrbitalBuyer" Abstract="True">
         <orbital>true</orbital>
+        <commonality>0.25</commonality>
         <stockGenerators>
-
             <!-- The silver -->
             <li Class="StockGenerator_SingleDef">
                 <thingDef>Silver</thingDef>
                 <countRange>99999~99999</countRange>
             </li>
+        </stockGenerators>
+        <hideThingsNotWillingToTrade>True</hideThingsNotWillingToTrade>
+    </TraderKindDef>
 
+    <TraderKindDef ParentName="SOM_SpecializedOrbitalBuyer">
+        <defName>Orbital_EquipmentBuyers</defName>
+        <label>equipment buyer</label>
+        <stockGenerators>
             <!-- Buying -->
 
             <li Class="StockGenerator_Category">
@@ -21,63 +26,35 @@
                 <categoryDef>Apparel</categoryDef>
             </li>
         </stockGenerators>
-        <hideThingsNotWillingToTrade>True</hideThingsNotWillingToTrade>
     </TraderKindDef>
 
-    <TraderKindDef>
+    <TraderKindDef ParentName="SOM_SpecializedOrbitalBuyer">
         <defName>Orbital_OrganBuyers</defName>
         <label>organ buyer</label>
-        <orbital>true</orbital>
         <stockGenerators>
-
-            <!-- The silver -->
-            <li Class="StockGenerator_SingleDef">
-                <thingDef>Silver</thingDef>
-                <countRange>99999~99999</countRange>
-            </li>
-
             <!-- Buying -->
-
             <li Class="StockGenerator_Category">
                 <categoryDef>BodyPartsNatural</categoryDef>
             </li>
         </stockGenerators>
-        <hideThingsNotWillingToTrade>True</hideThingsNotWillingToTrade>
     </TraderKindDef>
 
-    <TraderKindDef>
+    <TraderKindDef ParentName="SOM_SpecializedOrbitalBuyer">
         <defName>Orbital_ArtBuyers</defName>
         <label>art hoarder</label>
-        <orbital>true</orbital>
         <stockGenerators>
-
-            <!-- The silver -->
-            <li Class="StockGenerator_SingleDef">
-                <thingDef>Silver</thingDef>
-                <countRange>99999~99999</countRange>
-            </li>
-
             <!-- Buying -->
             <li Class="StockGenerator_BuyTradeTag"><tag>Art</tag></li>
             <li Class="StockGenerator_Category">
                 <categoryDef>BuildingsFurniture</categoryDef>
             </li>
         </stockGenerators>
-        <hideThingsNotWillingToTrade>True</hideThingsNotWillingToTrade>
     </TraderKindDef>
 
-    <TraderKindDef>
+    <TraderKindDef ParentName="SOM_SpecializedOrbitalBuyer">
         <defName>Orbital_FarmBuyers</defName>
         <label>farm buyer</label>
-        <orbital>true</orbital>
         <stockGenerators>
-
-            <!-- The silver -->
-            <li Class="StockGenerator_SingleDef">
-                <thingDef>Silver</thingDef>
-                <countRange>99999~99999</countRange>
-            </li>
-
             <!--Add all animal types to be purchased-->
 
             <li Class="StockGenerator_Category">
@@ -102,24 +79,14 @@
                 <categoryDef>FoodRaw</categoryDef>
             </li>
         </stockGenerators>
-        <hideThingsNotWillingToTrade>True</hideThingsNotWillingToTrade>
     </TraderKindDef>
 
-    <TraderKindDef>
+    <TraderKindDef ParentName="SOM_SpecializedOrbitalBuyer">
         <defName>Orbital_DrugBuyers</defName>
         <label>drug buyer</label>
-        <orbital>true</orbital>
         <stockGenerators>
-
-            <!-- The silver -->
-            <li Class="StockGenerator_SingleDef">
-                <thingDef>Silver</thingDef>
-                <countRange>99999~99999</countRange>
-            </li>
-
             <!-- Buying -->
             <li Class="StockGenerator_BuyTradeTag"><tag>Drugs</tag></li>
         </stockGenerators>
-        <hideThingsNotWillingToTrade>True</hideThingsNotWillingToTrade>
     </TraderKindDef>
 </Defs>
